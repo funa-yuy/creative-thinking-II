@@ -1,0 +1,138 @@
+
+html{
+	font-size: 18px;
+	font-family: "Noto Sans JP", 'Noto sans','Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif;
+	color: #111;
+  }
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height:  194%; /*行間指定*/
+	letter-spacing: 3.6px;/*字間指定*/
+    background-color: #009FBA;
+    color: #111;
+}
+
+li {
+	list-style:none; /*箇条書きのマーカー（黒っぽち）を消す*/
+}
+
+a {
+	text-decoration: none;
+	color:inherit
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #008B9C;
+}
+
+img {
+	vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+	width: 100%;
+	height: auto;
+  }
+/* ↑↑ここまで固定↑↑ */
+
+.title {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+}
+
+.center {
+	margin: 0 auto;
+}
+.main-section {
+	max-width: 1073px;
+	padding: 105px 27px;
+}
+.heading-img {
+	height: 64px;
+	width: auto;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+.line {
+	max-width: 1230px;
+	margin: 0 32px ;
+	border: 1px solid #000;
+}
+
+/* ↑↑共通↑↑ */
+
+.mv{
+	background-color: aquamarine;
+	display: flex;
+	justify-content: center;
+}
+
+.mv img {
+	padding-top: 150px;
+	padding-bottom: 13px;
+	height: 800px;
+	width: auto;
+}
+
+
+#about h2, #artist h2, #event h2, #gallery h2, #movie h2, #information h2, #access h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+	padding: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.artist-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.artist-item {
+    margin: 30px;
+	padding-top: 48px;
+    width: 260px;
+	height: 184px;
+    text-align: center;
+	font-size: 26px;
+	border: 3px solid #000;
+}
+
+
+
+.text-item__title {
+	font-size: 24px;
+	margin-bottom: 21px;
+}
+
+.text-item__text
+{
+	margin-bottom: 27px;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
