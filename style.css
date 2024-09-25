@@ -1,12 +1,11 @@
 
 html{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: "Noto Sans JP", 'Noto sans','Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif;
 	color: #111;
   }
 
 *{
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -15,7 +14,6 @@ body {
 	line-height:  194%; /*行間指定*/
 	letter-spacing: 3.6px;/*字間指定*/
     background-color: #009FBA;
-    color: #111;
 }
 
 li {
@@ -39,6 +37,10 @@ img {
   }
 /* ↑↑ここまで固定↑↑ */
 
+h3 {
+	font-size: 26px;
+	line-height: 194%; /* 50.44px */
+}
 .title {
     font-size: 2.5em;
     color: #fff;
@@ -49,7 +51,7 @@ img {
 	margin: 0 auto;
 }
 .main-section {
-	max-width: 1073px;
+	max-width: 1000px;
 	padding: 105px 27px;
 }
 .heading-img {
@@ -57,13 +59,18 @@ img {
 	width: auto;
 	text-align: center;
 	margin-bottom: 30px;
-
 }
 
 .line {
 	max-width: 1230px;
-	margin: 0 32px ;
+	width: 90%;
+	margin: auto;
 	border: 1px solid #000;
+}
+
+.text-item {
+	width: 800px;
+	margin: auto;
 }
 
 /* ↑↑共通↑↑ */
@@ -91,23 +98,23 @@ img {
 header {
     text-align: center;
     background-color: #fff;
-	padding: 5px;
+	padding: 7px;
 }
 
 header nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
+	font-weight: 700;
 }
 
 .artist-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .artist-item {
-    margin: 30px;
-	padding-top: 48px;
+    margin: 30px 0;
     width: 260px;
 	height: 184px;
     text-align: center;
@@ -115,24 +122,75 @@ header nav ul li {
 	border: 3px solid #000;
 }
 
-
+.artist-name {
+	padding-top: 48px;
+	letter-spacing: 7.54px;
+	font-weight: 500;
+}
 
 .text-item__title {
-	font-size: 24px;
-	margin-bottom: 21px;
+	font-size: 22px;
+	margin: 36px 0px 21px 0px;
 }
 
 .text-item__text
 {
 	margin-bottom: 27px;
 }
+
 .gallery-item img {
     width: 100%;
     height: auto;
 }
 
+
+/* movie */
+.movie__link {
+	display: block;
+	margin: auto;
+}
+/* information */
+.information__title {
+	text-align: center;
+	letter-spacing: 0.5px;/*字間指定*/
+}
+
+#information .text-item {
+
+}
+.sns-link {
+	margin-top: 27px;
+}
+.sns-items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	width: 205px;
+}
+
+.sns-items li img{
+	height: 45px;
+	width: auto;
+}
+
+
+/* access */
+.access__map {
+	width: 576px;
+	height: auto;
+	margin: 50px auto 75px auto;
+    display: block;
+
+}
+
+/* footer */
 footer {
-    text-align: center;
-    padding: 20px;
+    padding: 20px 27px;
     background-color: #fff;
+	font-size: 14px;
+}
+
+.footer-text{
+	margin: auto;
+    width: 1046px;
 }
