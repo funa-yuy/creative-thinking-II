@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
 	<title>造形思考Ⅱ－テキスタイル / 版表現 : 機械と手わざのあいだ－</title>
+	<!--/slider用-->
+	<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <body>
 	<!--トップページのメインビジュ-->
@@ -13,7 +17,6 @@
 	</div>
 
     <header>
-        <!-- <h1 class="title">創形思考</h1> -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -30,41 +33,536 @@
     <section id="about" class="main-section center">
         <h2><img class="heading-img" src="images/about.png"></h2>
 
-        <p>ごあいさつ
-			<br><br>造形思考Ⅱ－テキスタイル / 版表現 : 機械と手わざのあいだ－
+		<div class="someTabs" data-tabs="">
+			<nav class="tabs__nav">
+			  <a href="#" class="tabs__item active" data-tab="">日本語</a>
+			  <a href="#" class="tabs__item" data-tab="">English</a>
+			</nav>
 
-			<br><br>「造形思考」は、東京造形大学の卒業生の活躍をグループ展形式で紹介する展覧会です。
-			<br><br>本企画では、東京造形大学の10専攻領域の内の2つの領域の卒業生の仕事を取り上げます。2023年に開催した1回目は「造形思考Ⅰ 現在の手ざわり」として、写真専攻領域と絵画専攻領域の卒業生を紹介しました。2回目となる今回はテキスタイルデザイン専攻領域を卒業した3名のクリエイターと、絵画専攻領域を卒業し、なおかつ版的な表現を志向するアーティスト3名の組み合わせで行います。
-			<br><br>東京造形大学のテキスタイルデザイン専攻領域はテキスタイルの基礎である「織り」と「染め」の技術を学ぶことを基本にしています。その上で生産の現場との関わりや、デザインやファッションとしてのあり方など、テキスタイルが社会とどのように関わっていくかを見据えたカリキュラムが組まれています。これにより、地域との連携や日常をつくる空間との関わりを意識した展開を行うクリエイターを多く輩出しています。
-			<br><br>東京造形大学の絵画専攻領域は「油彩画」「日本画」のように表現手法で分かれておらず、「絵画」内で自由に選択できるようにしています。したがって「版」も4つに分かれる絵画のコースの1つとなっています。さらに特徴的なのが「版画」ではなく「版」であることです。版画というと紙にリトグラフやシルクスクリーンといった手法で印刷した作品が想起されますが、「版」はより広く、イメージを複製する技術や間接表現と、そこから生まれる思考が反映された作品も含んでいます。
-			<br><br>テキスタイルと版画はいずれも道具を用いて制作されてきました。共に、人の手わざと機械との協働によって発展してきた分野であると考えられます。一方で、近年のデジタル化の急速な進展によって、必ずしも歴史的な知識や技術を持たなくとも、生産やイメージの複製の現場では目的を達成できる時代になってきました。さらにAI技術という新しい「機械」の時代にも踏み込んでいきそうな気配も感じます。そういった現代社会にあって、手わざと機械の関係からはどのような創造性が生まれるのでしょうか。6人の作品を通して、その可能性についてあらためて考えてみたいと思います。</p>
+			<div class="tabs__body">
+				<div class="tabs__content active" data-tab-content="">
+					<p>ごあいさつ
+						<br><br>造形思考Ⅱ－テキスタイル / 版表現 : 機械と手わざのあいだ－
+
+						<br><br>「造形思考」は、東京造形大学の卒業生の活躍をグループ展形式で紹介する展覧会です。
+						<br><br>本企画では、東京造形大学の10専攻領域の内の2つの領域の卒業生の仕事を取り上げます。2023年に開催した1回目は「造形思考Ⅰ 現在の手ざわり」として、写真専攻領域と絵画専攻領域の卒業生を紹介しました。2回目となる今回はテキスタイルデザイン専攻領域を卒業した3名のクリエイターと、絵画専攻領域を卒業し、なおかつ版的な表現を志向するアーティスト3名の組み合わせで行います。
+						<br><br>東京造形大学のテキスタイルデザイン専攻領域はテキスタイルの基礎である「織り」と「染め」の技術を学ぶことを基本にしています。その上で生産の現場との関わりや、デザインやファッションとしてのあり方など、テキスタイルが社会とどのように関わっていくかを見据えたカリキュラムが組まれています。これにより、地域との連携や日常をつくる空間との関わりを意識した展開を行うクリエイターを多く輩出しています。
+						<br><br>東京造形大学の絵画専攻領域は「油彩画」「日本画」のように表現手法で分かれておらず、「絵画」内で自由に選択できるようにしています。したがって「版」も4つに分かれる絵画のコースの1つとなっています。さらに特徴的なのが「版画」ではなく「版」であることです。版画というと紙にリトグラフやシルクスクリーンといった手法で印刷した作品が想起されますが、「版」はより広く、イメージを複製する技術や間接表現と、そこから生まれる思考が反映された作品も含んでいます。
+						<br><br>テキスタイルと版画はいずれも道具を用いて制作されてきました。共に、人の手わざと機械との協働によって発展してきた分野であると考えられます。一方で、近年のデジタル化の急速な進展によって、必ずしも歴史的な知識や技術を持たなくとも、生産やイメージの複製の現場では目的を達成できる時代になってきました。さらにAI技術という新しい「機械」の時代にも踏み込んでいきそうな気配も感じます。そういった現代社会にあって、手わざと機械の関係からはどのような創造性が生まれるのでしょうか。6人の作品を通して、その可能性についてあらためて考えてみたいと思います。
+					</p>
+					<p class="align-right">
+						<br>2024年10月
+						<br>末永史尚
+						<br>東京造形大学教授
+					</p>
+				</div>
+				<div class="tabs__content" data-tab-content="">
+					<p>Foreword
+						<br><br>Creative Thinking Ⅱ: Textile/ Print Media: In Between Machine and Hand
+
+						<br><br>“Creative Thinking” is a group exhibition that introduces the activities of Tokyo Zokei University graduates. The first exhibition, held in 2023, was entitled “Creative Thinking I: Modern Touch,” and featured graduates in the photography and painting fields. This year's second exhibition will be a combination of three creators who graduated from the Textile Design major and three artists who graduated from the Painting major and still aspire to express themselves in print media.
+						<br><br>The textile design major at Tokyo Zokei University is based on the study of “weaving” and “dyeing” techniques, the fundamentals of textiles. The curriculum is then designed with an aim toward how textiles interact with society, such as in relation to the field of production and as a form of design and fashion. This has produced many creators who are conscious of their relationship with the local community and the spaces in which they create their daily lives.
+						<br><br>The painting major at Tokyo Zokei University is not divided into “oil painting” and “Japanese painting” by technique and allows students to freely choose within the “painting” category. Therefore, “prints” is one of the four separate painting courses. What is even more unique is that it is not a “print” but a “print media.” While prints are often associated with works printed on paper by lithograph or silkscreen, “print media” are broader and include works that reflect the techniques of reproduction and indirect expression of an image and the thoughts that emerge from that process.
+						<br><br>Both textiles and prints have been produced using tools. Both have developed through the collaboration of human hands and machines. On the other hand, the rapid progress of digitization in recent years has brought us to an age in which we can achieve our goals in production and image reproduction without necessarily having historical knowledge or skills. Furthermore, feels that we are about to enter an era of new “machines” called AI technology. Through the works of the six artists, we would like to reexamine the possibilities for creativity in today's society.
+					</p>
+					<p class="align-right">
+						<br>SUENAGA Fuminao
+						<br>Professor, Tokyo Zokei University
+						<br>October　2024
+					</p>
+				  </div>
+			</div>
+		</div>
     </section>
 
 	<div class="line"></div>
 
-
     <section id="artist" class="main-section center">
          <h2><img class="heading-img" src="images/artist.png"></h2>
-        <div class="artist-list">
-            <div class="artist-item">
-				<h3 class="artist-name">市野悠</h3>
+
+		<div class="someTabs" data-tabs="">
+			<nav class="tabs__nav">
+				<a href="#" class="tabs__item active" data-tab="">日本語</a>
+				<a href="#" class="tabs__item" data-tab="">English</a>
+			</nav>
+
+		  <div class="tabs__body">
+			<div class="tabs__content active" data-tab-content="">
+				<div class="artist_container">
+
+					<button>
+						<div class="artist_box">
+							<h3 class="artist-name">市野悠</h3>
+							<a class="more modal_open" data-modal="modal1">&gt;More</a>
+						</div>
+					</button>
+
+					<div id="modal1" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-f1d19ec94936c472" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Katsuki_Keisuke1.png" height="241" alt="">
+											<p class="work_name">《Angels》ガラス板にコロジオン湿板方式,<br>アンブロタイプ,101x127mm,2023年</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Katsuki_Keisuke2.png" height="240" alt="">
+											<p class="work_name">《Lux #9》パネルにアクリル、LEDライト、<br>カラーフィルター,2000x2000mm,2021年</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">香月恵介/KATSUKI Keisuke</p>
+								<p class="profile">　私の絵画制作ではモニターに映し出された画像をその表示構造、つまり赤青緑の画素を絵具で再現した「ピクセルペインティング」を主軸として展開している。画像は主にモネやターナーの絵画を採用しているが、これは光を描いた著名な画家の作品を、現代の光学技術の成果たるモニター(発光する画像)へ召喚し、その画像を絵画化することによって、現代におけるイメージや光についての再考を促すためである。<br>
+								　近年では、Diffusion model AIが生成した画像を古典写真技法によって定着させた写真作品を制作している。アルゴリズムによる画像生成プロセスは、写真機による被写体の投影よりも人間が想像する「イメージ」の生成に近いものであった。私は画像生成の最中に紛れ込んだエクストラを心霊と呼ぶことにした。</p>
+							</div>
+						</div>
+					</div>
+
+					<button>
+						<div class="artist_box">
+							<h3 class="artist-name">小野栞</h3>
+							<a class="more modal_open" data-modal="modal2">&gt;More</a>
+						</div>
+					</button>
+
+					<div id="modal2" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-57f3326efe899f5e" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Kimura_Choku1.png" height="241" alt="">
+											<p class="work_name">《この松林は誰のためにあるのだろうか》<br>インスタレーション,2022年,<br>「コミテコルベールアワード 2022 -The beauty of imperfection- 展」（東京藝術大学大学美術館）より</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Kimura_Choku2.png" height="240" alt="">
+											<p class="work_name">《国立療養所松丘保養園 北側 MH N-01》<br>写真,614×724mm,2022年</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">木村直/KIMURA Choku</p>
+									<p class="profile">　本作品は、青森県にある国立療養所松丘保養園を撮影したものです。松丘保養園は、1909年に設立された日本最北端に位置するハンセン病療養所で、北海道及び東北6県のハンセン病者を収容していました。松丘保養園 (1941年に国立に移管、現在の国立療養所松丘保養園に改称)の由来は、「松の生茂る丘」の様子から来ています。撮影当時 （2022年頃）、コロナ禍の影響で療養所では入所者との交流が困難になり、地域住民による散歩も遠慮してほしいとされていました。療養所と青森市内で暮らす伯龍さんは「ハンセン病療養所で暮らすことがどういうことなのか、またはハンセン病とはそもそも何なのか、未だに知られていない」と語ります。本作品ではこれらの現状から社会と生活の場としてのハンセン病療養所の境界線を見つめます。
+									</p><p style="font-size: 11px; line-height: 18px;">協力：弘前大学人文社会科学部地域未来創生プロジェクト「地域のなかの松丘保養園の再発見：生活誌・自然景観・身体経験を通して」（代表　白石壮一郎）</p>
+									<p></p>
+								</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">数見亮平</h3>
+						<a class="more modal_open" data-modal="modal3">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal3" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-ef82310721883ce3c" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Koyama_Wataru1.png" height="241" alt="">
+											<p class="work_name">《CRPPP-包括的抑圧防止プログラム-》<br>ビデオインスタレーション,33分6秒,2023年,撮影者:木奥惠三,<br>「三菱商事アート・ゲート・プログラム2021-2022 支援アーティスト6組による新作展」2023年、代官山ヒルサイドフォーラム</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Koyama_Wataru2.png" height="240" alt="">
+											<p class="work_name">《最期の1分》ビデオインスタレーション,未定（1分の映像を作家が死ぬまで撮り続けて蓄積していくため未定とする）,2020年-,撮影者:森田兼次,「すみっこCRASH☆」 2022年、無人島プロダクション</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">小山渉/KOYAMA Wataru</p>
+								<p class="profile">
+									　私は人間の精神に一貫した関心を寄せ、感情や精神病理、死生観などを題材に、映像作品を中心に作品制作を行っています。近作では、作家自身と被写体との親密な関係性の中で表出する語りや行為に着目した表現を探っています。
+									<br><br>
+									　制作の根底には、思春期を引きこもりとして過ごした経験と、精神科福祉施設で働いた経験が大きく影響しています。これらの経験は、身体と精神の状態についての観察と想像、他者との対話のプロセス、社会から受ける抑圧や規範に対して個人がいかに生きていくのか、といった関心を深めていくことに繋がりました。
+									<br><br>
+									　私が人間の精神を見つめる中で芸術表現に期待するものは、人間の様々な価値の境界を揺さぶることにあるのだと思います。
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">片岡美央</h3>
+						<a class="more modal_open" data-modal="modal4">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal4" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-1f36bceb835436108" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 1">
+											<img src="images/Chihara_Mami.png" height="241" alt="">
+											<p class="work_name">《風景#7》コラージュ・ミクスドメディア,460×550mm,2020年,<br>撮影者:上妻森土</p>
+										</div>
+									</div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">千原真実/CHIHARA Mami</p>
+								<p class="profile">　私は近年、絵と絵のまわりをテーマにコラージュの技法を用いて“風景”というタイトルの作品を制作してきた。私の作品の“風景”とは、どこかの場所を表す“風景画”ではなくて、コラージュによって画面上に創り出されていくどこにもない“風景”である。私にとって“風景”を創ることはまっさらな壁やキャンバスに空間を生み出すことであり、いくつもの物質的な境界がある中に“風景”を通じて何らかの繋がりをもたらすことである。今回の展覧会では、既成の印刷物から要素を抽出していく新しく試みた“風景”を展開したい。
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">谷口典央</h3>
+						<a class="more modal_open" data-modal="modal5">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal5" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-2d95bb2e90ae64d10" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Nagata_Daisuke1.png" height="241" alt="">
+											<p class="work_name">《blur》インクジェットプリント,1030×1456mm,2015年</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Nagata_Daisuke2.png" height="240" alt="">
+											<p class="work_name">《blur》インクジェットプリント,1030×1456mm,2021年</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">ナガタダイスケ/nagatadaisuke</p>
+								<p class="profile">
+									「そこは前、・・・だったよね」<br>
+									撮影をする為、屋上から景色を眺めていると隣に観光客らしき年配の2人組がやって来た。
+									2人は、今いる建物が別の名前だったことや、人がミニチュアのように見えること、すぐ横に見える建物を設計したのは「なんだっけ、有名な建築家、それだけは知ってる」と話していた。
+									<br><br>
+									写真を見返していると、居心地の悪いタクシーの存在が気になった。
+									拡大してみると、現実感の薄れた写真が現れた。これは面白いと感じ、現実感を保ったままどこまで想像を引き寄せることができるか試みることにした。
+									案外、現実と想像の間を逡巡してしまう事も悪くないのではないかと思う。
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">吉本悠美</h3>
+						<a class="more modal_open" data-modal="modal6">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal6" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-9972444d7aebfc87" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Hashidate_Rino1.png" height="242" alt="">
+											<p class="work_name">《ひふみよ》インクジェットプリント・平織,<br>1456×1030mm,2018年</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Hashidate_Rino2.png" height="242" alt="">
+											<p class="work_name">《ひふみよ》インクジェットプリント・平織,<br>1456×1030mm,2018年</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">橋立梨乃/HASHIDATE Rino</p>
+								<p class="profile">
+									人体で一番大きな臓器と呼ばれている臓器は皮膚である。<br>皮膚は触覚・温度・音・匂い・痛み・快感・色味といった”生”を感じる重要な体のパーツ だ。
+									<br><br>
+									この皮膚という衣を父母からもらい生まれた。<br>
+									流行りもないし、脱ぐこともできない、特別な衣である。 きっと死ぬまで一生着続けるだろう。 <br>
+									命を包み守っている神秘的な皮膚は、母体の中で形成され、活発な分裂を繰り返し<br>そして 一生を全うしひっそりと死んでいく。
+									<br><br>
+									人間は皮膚という衣を誰でも纏っている。<br>
+									DNA がひー、ふー、みー...と。 <br>
+									縦糸と横糸を紡ぐことで繋がってきた。 <br>
+									私もその一人である。
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
-            <div class="artist-item">
-				<h3 class="artist-name">小野栞</h3>
+
+			<div class="tabs__content" data-tab-content="">
+				<div class="artist_container">
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">ICHINO Yu</h3>
+						<a class="more modal_open" data-modal="modal7">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal7" class="modal" style="display: none;">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden">
+									<div class="swiper-wrapper" id="swiper-wrapper-9be8410996dea945b" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-455px, 0px, 0px);">
+
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 455px;">
+											<img src="images/Katsuki_Keisuke2.png" height="240" alt="">
+											<p class="work_name">《Lux #9》Acrylic on panel, LED light,<br> color filter,2000x2000mm,2021</p>
+										</div>
+									<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 455px;">
+											<img src="images/Katsuki_Keisuke1.png" height="241" alt="">
+											<p class="work_name">《Angels》Wet collodion glass plate negative, Ambrotype,101x127mm,2023</p>
+										</div></div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">KATSUKI Keisuke</p>
+									<p class="profile" style="text-align: left;">
+
+										　　　　The core of my painting work is `pixel painting,’ in which I paint to reproduce the structure of the image displayed on a monitor, i.e., red, blue, and green pixels. I mainly use Monet and Turner's paintings as my images, in order to summon the works of famous painters who depicted light onto the monitor (self-illuminated image), which is the result of modern optical technology, to encourage to explore images and light in the modern age.<br>
+										　　　　Nowadays, I have been producing photographic works using images generated by Diffusion model AI and fixed using classical photographic techniques. The algorithmic image generation process was more similar to the generation of an `image‘ envisioned by a human being than to the projection of a subject by a photographic machine. I chose to call the extras that were mixed in during the image generation process as psychic spirits.
+									</p>
+								</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">ONO Shiori</h3>
+						<a class="more modal_open" data-modal="modal8">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal8" class="modal" style="display: none;">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden">
+									<div class="swiper-wrapper" id="swiper-wrapper-4409e82a581ffa5c" aria-live="off" style="transition-duration: 300ms; transform: translate3d(-455px, 0px, 0px);">
+
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 455px;">
+											<img src="images/Kimura_Choku2.png" height="240" alt="">
+											<p class="work_name">《National Matsuoka Hoyoen Sanatorium The north side  MH N-01》Photograph,614×724mm,2022</p>
+										</div>
+									<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 455px;">
+											<img src="images/Kimura_Choku1.png" height="241" alt="">
+											<p class="work_name">《Who is this pine wood for?》<br>Installation,2022, “Comité colbert award 2022 -The beauty of imperfection- Exhibition”　The University Art Museum, Tokyo University of the Arts
+											</p>
+										</div></div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">KIMURA Choku</p>
+									<p class="profile" style="text-align: left;">
+										　　　　This work was taken at National Sanatorium Matsuoka Hoyoen in Aomori Prefecture. Established in 1909, it was Japan's northernmost sanatorium for Hansen's disease, housing patients with Hansen's disease in Hokkaido and six prefectures in the Tohoku region. The name Matsuoka Sanatorium (transferred to the national government in 1941 and renamed the current National Sanatorium Matsuoka Hoyoen) comes from the location of ‘a hill overgrown with pine trees’; as of August 2022, due to the Corona disaster, the sanatorium is having difficulty interacting with residents and has asked local residents to refrain from taking walks. Hakuryu, who lives at the sanatorium and in Aomori City, says, “People still don’t know what it is like to live in a Hansen's disease sanatorium or what Hansen's disease is in the first place.” This film explores these current situation.
+										</p><p style="font-size: 11px; line-height: 18px;">With the cooperation of IRRC Research Project "Rediscovering the Matsuoka Hoyouen, National Sanatorium in the Royal Contexts: Life Histories, Natural Landscape, and Physical Experience" (Representative: Soichiro Shiraishi) , Faculty of Humanities and Social Sciences, Hirosaki University.</p>
+									<p></p>
+								</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">KAZUMI Ryohei</h3>
+						<a class="more modal_open" data-modal="modal9">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal9" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-d6ed84bed6c38d5b" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Koyama_Wataru1.png" height="241" alt="">
+											<p class="work_name">《CRPPP -Comprehensive Repression Prevention and Protection Programme-》Video installation,<br>33min. 6sec.,2023,Photographer:KIOKU Keizo,<br>“Mitsubishi Corporation Art Gate Program 2021-2022: New Works by 6 Supporting Artists”  2023, Daikanyama Hillside Forum, Tokyo</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Koyama_Wataru2.png" height="240" alt="">
+											<p class="work_name">《Last minute》Video installation,Undecided (Undecided because the artist will continue to shoot and accumulate 1 minute of footage until his death),2020-,Photographer:MORITA Kenji,“Sumikko CRASH☆” 2022, MUJIN-TO Production, Tokyo</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">KOYAMA Wataru</p>
+									<p class="profile" style="text-align: left;">
+											　　　　I have a consistent interest in the human mind, and my work focuses on video works on subjects such as emotions, psychopathology, and views of life and death. In my recent works, I have been exploring expressions that focus on the dialogue and actions that emerge in the intimate relationship between the artist and the subject.
+											<br><br>
+											　　　　The basis of my work is largely influenced by my experiences as a socially withdrawn adolescent and as a staff in a psychiatric welfare facility. These experiences led to a deepening interest in observing and imagining states of body and mind, the process of interacting with others, and how individuals live with the oppression and norms they receive from society.
+											<br><br>
+											　　　　What I seek in ｍｙ artistic expression is to observe human mind and to shake the boundaries of various social values.
+
+									</p>
+								</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">KATAOKA Mio</h3>
+						<a class="more modal_open" data-modal="modal10">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal10" class="modal" style="display: none;">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden">
+									<div class="swiper-wrapper" id="swiper-wrapper-b1077b93a69c109187" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 1" style="width: 455px;">
+											<img src="images/Chihara_Mami.png" height="241" alt="">
+											<p class="work_name">《Landscape#7》<br>Collage・Mixedmedia,460×550mm,2020,<br>Photographer:KOZUMA Morito</p>
+										</div>
+									</div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">CHIHARA Mami</p>
+									<p class="profile" style="text-align: left;">
+										　　　　In recent years, I have been creating works titled "Landscape" using collage techniques on the theme of pictures and their surroundings. These "landscape" series are not merely ‘landscape painting’ that represents some place, but a "landscape" that is created on the screen by collage and is not found anywhere else. For me, to create a "landscape" is to create a space on a blank wall or canvas, and to bring some kind of connection through a "landscape" within several material boundaries. In this exhibition, I would like to develop a new attempt of "landscape" by extracting elements from existing printed materials.
+									</p>
+								</div>
+						</div>
+					</div>
+
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">TANIGUCHI Norio</h3>
+						<a class="more modal_open" data-modal="modal11">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal11" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-11e5a8c1f53e9a82" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Nagata_Daisuke1.png" height="241" alt="">
+											<p class="work_name">《blur》Inkjet print,1030×1456mm,2015</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Nagata_Daisuke2.png" height="240" alt="">
+											<p class="work_name">《blur》Inkjet print,1030×1456mm,2021</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+							<div class="profile_center">
+								<p class="name">nagatadaisuke</p>
+								<p class="profile" style="text-align: left;">
+									“That was ... right?”<br>
+									While I was looking at the view from the rooftop for a photo shoot, a couple of elderly tourists came next to me.<br>
+									They were talking about the building now had a different name, how people looked like miniatures, and how the building right next to them was designed by "what was it, a famous architect, that's all I know".<br>
+									As I looked back at the photo, I noticed an uncomfortable looking taxi.<br>
+									When I enlarged the photo, a diminished sense of reality appeared. I found this interesting and decided to try to see how far I could take my imagination while maintaining a sense of reality.<br>
+									Surprisingly, I think it is not bad to hesitate between reality and imagination.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<button>
+					<div class="artist_box">
+						<h3 class="artist-name">YOSHIMOTO Yumi</h3>
+						<a class="more modal_open" data-modal="modal12">&gt;More</a>
+					</div>
+					</button>
+					<div id="modal12" class="modal">
+						<div class="modal_content">
+							<span class="modal_close">×</span>
+							<div class="modal_main">
+								<div class="slide">
+								<div class="swiper-container swiper-initialized swiper-horizontal">
+									<div class="swiper-wrapper" id="swiper-wrapper-a07e1e97fb3eaeab" aria-live="off" style="transition-duration: 300ms;">
+										<div class="swiper-slide swiper-slide-next swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 2">
+											<img src="images/Hashidate_Rino1.png" height="242" alt="">
+											<p class="work_name">《Hifumiyo》<br>Ink jet printing・Plain weave,1456×1030mm,2018</p>
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 2">
+											<img src="images/Hashidate_Rino2.png" height="242" alt="">
+											<p class="work_name">《Hifumiyo》<br>Ink jet printing・Plain weave,1456×1030mm,2018</p>
+										</div>
+									</div>
+									<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+									<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-10d77b9b9943a33d5"></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+								</div>
+							</div>
+								<div class="profile_center">
+									<p class="name">HASHIDATE Rino</p>
+									<p class="profile" style="text-align: left;">
+										Skin is the largest organ in the human body. The skin is an important body part that senses `life’ in terms of touch, temperature, sound, smell, pain, pleasure, and color.
+										<br><br>
+										I was born with this skin, which was given to me by my parents.<br>
+										It is a special garment that never goes out of style and cannot be taken off. I am sure that I will continue to wear it all my life until the day I die. <br>
+										The mysterious skin that wraps and protects life is formed in the mother's body, undergoes active division repeatedly, and dies quietly after a lifetime.
+										<br><br>
+										Every human being wears a garment called skin.<br>
+										Knitting DNA one by one, hi, fu, mi…, in old Japanese numerals. <br>
+										We have been connected by spinning the warp and weft. <br>
+										I am one of them.<br>
+									</p>
+								</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
-            <div class="artist-item">
-				<h3 class="artist-name">数見亮平</h3>
-			</div>
-			<div class="artist-item">
-				<h3 class="artist-name">片岡美央</h3>
-			</div>
-            <div class="artist-item">
-				<h3 class="artist-name">谷口典央</h3>
-			</div>
-            <div class="artist-item">
-				<h3 class="artist-name">吉本悠美</h3>
-			</div>
-        </div>
+		  </div>
+		</div>
     </section>
 
 	<div class="line"></div>
@@ -97,11 +595,46 @@
 
 	<div class="line"></div>
 
+
+
+
+
     <section id="gallery" class="main-section center">
          <h2><img class="heading-img" src="images/gallery.png"></h2>
-        <div class="gallery-item">
-            <img src="gallery-image.jpg" alt="ギャラリー画像">
-        </div>
+		 <div class="slider">
+			<!--/slider-->
+			<ul class="slider-inner">
+				<li>
+					<img src="images/artwork/ichinoyu/地を這う.JPG"/>
+					<p class="work_name">市野悠《地を這う》2024年　撮影：杉田竜平</p>
+				</li>
+				<li>
+					<img src="images/artwork/onoshiori/①-1②-1.jpg"/>
+					<p class="work_name">小野栞《Muse》2023年　撮影：角田航</p>
+				</li>
+				<li>
+					<img src="images/artwork/kazumiryohei/RK-work_01.jpg"/>
+					<p class="work_name">数見亮平　展示風景 “INSTRUMENTAL READINGS” (代官山蔦屋書店) 2023年　撮影：坂本理</p>
+				</li>
+				<li>
+					<img src="images/artwork/kataokamio/kokemomo.jpg"/>
+					<p class="work_name">片岡美央《FUJIYOSHIDA FRUITS GIFT BOX “KOKEMOMO”》 2021年</p>
+				</li>
+				<li>
+					<img src="images/artwork/tanihuchinorio/家族.jpg"/>
+					<p class="work_name">谷口典央《家族》2023年</p>
+				</li>
+				<li>
+					<img src="images/artwork/yoshimotoyumi/Portraitlab2.jpg"/>
+					<p class="work_name">吉本悠美《Fabric Objects,Poster suits》2024年</p>
+				</li>
+			</ul>
+		</div>
+		<div class="gallery_more-link">
+			<a href="./index-2.html" class="more-link">
+				<button type="button">&gt;More</button>
+			</a>
+			</div>
     </section>
 
 	<div class="line"></div>
@@ -136,7 +669,7 @@
 				<ul class="sns-items">
 					<li class="sns-items__inst" ><a  href="https://www.instagram.com/tzuartmuseum/" target="_blank"><img src="images/sns_ins.png" alt=""></a></li>
 					<li class="sns-items__tw" ><a href="https://twitter.com/tzuartmuseum" target="_blank"><img src="images/sns_x.png" alt=""></a></li>
-					<li class="sns-items__fb"  ><a href="https://www.zokei.ac.jp/museum/about/" target="_blank"><img src="images/sns_hp.png" alt=""></a></li>
+					<li class="sns-items__fb"  ><a href="https://www.facebook.com/TokyoZokeiUniversityArtMuseum/" target="_blank"><img src="images/facebook.png" alt=""></a></li>
 				</ul>
 			</div>
 		</div>
@@ -170,5 +703,12 @@
 			</div>
 		</div>
     </footer>
+
+<!--/slider用-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+	<script src="main.js"></script>
 </body>
 </html>
