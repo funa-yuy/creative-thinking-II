@@ -59,6 +59,7 @@ h3 {
 	max-width: 1000px;
 	padding: 105px 27px;
 }
+
 .heading-img {
 	height: 64px;
 	width: auto;
@@ -156,7 +157,7 @@ a.tabs__item {
 
 
 .mv{
-	background-color: aquamarine;
+	/* background-color: aquamarine; */
 	display: flex;
 	justify-content: center;
 }
@@ -169,7 +170,7 @@ a.tabs__item {
 }
 
 
-#about h2, #artist h2, #event h2, #gallery h2, #movie h2, #information h2, #access h2 {
+#about h2, #artist h2, #event h2, #gallery h2, #movie h2, #information h2, #access h2,  #gallery-page h2 {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
@@ -223,6 +224,8 @@ header nav ul li {
 	letter-spacing: 4.06px;
 }
 
+/* モーダルウィンドウ */
+
 .modal {
 	display: none;
 	position: fixed;
@@ -235,17 +238,74 @@ header nav ul li {
 	background-color: rgba(0,0,0,0.50);
 }
 
-.modal_content {
+.modal__content {
 	background-color: #FFF;
 	border-radius: 30px;
 	width: 660px;
 	padding: 0 40px;
-	padding-bottom: 40px;
 	animation-name: modal_open;
 	animation-duration: 1s;
 	position: absolute;
 	top: calc(50% - 660px /2);
 	left: calc(50% - 660px /2);
+}
+
+.modal_close {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
+	font-size: 25px;
+}
+
+
+.modal_main .slider-inner img {
+	 width:auto;/*スライダー内の画像を横幅100%に*/
+	 max-height: 230px;
+	 margin: 0 auto;
+}
+
+
+.modal_main .work_name {
+	font-size: 10px;
+	padding-top: 15px;
+}
+.modal_main .slick-dots {
+    text-align: center;
+    margin: 0;
+}
+
+/* モーダル　テキスト */
+.modal__artist-name {
+	font-size: 24px ;
+	font-weight: 500;
+}
+.modal__heading {
+	font-size: 14px;
+	letter-spacing: 2.6px;
+	font-weight: 500;
+}
+
+.modal__artist-text {
+	font-size: 13px;
+	letter-spacing: 2.6px;
+}
+
+.modal__artist-name {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.modal__artist-career {
+	margin-bottom: 30px;
+}
+
+.modal__text-box {
+	margin-bottom: 40px;
+}
+
+.table th {
+	font-weight: normal;
+	vertical-align: top;
+	white-space: nowrap;
 }
 
 
@@ -275,7 +335,7 @@ header nav ul li {
 
 .slider-inner img {
 	 width:auto;/*スライダー内の画像を横幅100%に*/
-	 max-height: 460px;
+	 max-height: 300px;
 	 margin: 0 auto;
 }
 
@@ -416,7 +476,15 @@ footer {
 	font-size: 14px;
 }
 
-.footer-text{
+.footer__inner{
 	margin: auto;
     width: 1046px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+footer img{
+	width: 300px;
+	height: auto;
 }
