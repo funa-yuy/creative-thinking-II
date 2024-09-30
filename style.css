@@ -3,7 +3,7 @@ html{
 	font-size: 17px;
 	font-family: "Noto Sans JP", 'Noto sans','Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif;
 	color: #111;
-  }
+}
 
 *{
 	margin: 0;
@@ -72,11 +72,6 @@ h3 {
 	width: 90%;
 	margin: auto;
 	border: 1px solid #000;
-}
-
-.text-item {
-	width: 800px;
-	margin: auto;
 }
 
 
@@ -164,8 +159,8 @@ a.tabs__item {
 
 .mv img {
 	padding-top: 150px;
-	padding-bottom: 13px;
-	height: 800px;
+    padding-bottom: 20px;
+    height: 600px;
 	width: auto;
 }
 
@@ -191,7 +186,7 @@ header nav ul li {
 /* artist */
 .artist_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -246,7 +241,7 @@ header nav ul li {
 	animation-name: modal_open;
 	animation-duration: 1s;
 	position: absolute;
-	top: calc(50% - 660px /2);
+	top: 30px;
 	left: calc(50% - 660px /2);
 }
 
@@ -434,6 +429,9 @@ header nav ul li {
 .movie__link {
 	display: block;
 	margin: auto;
+	width: 100%;
+	height: auto;
+
 }
 /* information */
 .information__title {
@@ -441,9 +439,7 @@ header nav ul li {
 	letter-spacing: 0.5px;/*字間指定*/
 }
 
-#information .text-item {
 
-}
 .sns-link {
 	margin-top: 27px;
 }
@@ -462,7 +458,7 @@ header nav ul li {
 
 /* access */
 .access__map {
-	width: 576px;
+	max-width: 576px;
 	height: auto;
 	margin: 50px auto 75px auto;
     display: block;
@@ -476,15 +472,70 @@ footer {
 	font-size: 14px;
 }
 
-.footer__inner{
-	margin: auto;
-    width: 1046px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+.footer__inner {
+    margin: auto;
+    max-width: 1046px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 footer img{
 	width: 300px;
 	height: auto;
+	padding-top: 20px;
+}
+
+
+@media screen and (max-width: 799px){
+	html
+	{
+		font-size: 16px;
+	}
+	body {
+		letter-spacing: 2.6px;/*字間指定*/
+	}
+	.artist_box {
+		width: 200px;
+		height: 141px;
+	}
+	.modal__content {
+		min-width: 300px;
+        width: 80%;
+		padding: 0 25px;
+        left: calc(50% - 88% / 2);
+	}
+	.slick-prev, .slick-next {
+		height: 17px;
+		width: 17px;
+	}
+	.modal_main .slider-inner img {
+		max-height: 200px;
+	}
+	.modal_main .work_name {
+		font-size: 9px;
+		padding-top: 10px;
+	}
+}
+
+
+
+@media screen and (max-width: 499px){
+	.mv img {
+		width: 95%;
+		height: auto;
+	}
+	.artist_box {
+		width: 260px;
+		height: 184px;
+    }
+	.modal__content {
+        left: calc(50% - 93% / 2);
+	}
+	.modal_main .slider-inner img {
+		max-height: 160px;
+	}
+
 }
