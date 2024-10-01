@@ -159,7 +159,7 @@ a.tabs__item {
 
 .mv img {
 	padding-top: 150px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     height: 600px;
 	width: auto;
 }
@@ -214,7 +214,7 @@ header nav ul li {
 .more {
 	position: absolute;
     bottom: 25px;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 194%; /* 27.16px */
 	letter-spacing: 4.06px;
 }
@@ -489,6 +489,24 @@ footer img{
 }
 
 
+
+.photos_inner
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.photos_inner img
+{
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	padding: 10px;
+}
+
+
 @media screen and (max-width: 799px){
 	html
 	{
@@ -500,6 +518,9 @@ footer img{
 	.artist_box {
 		width: 200px;
 		height: 141px;
+	}
+	h3 {
+	font-size: 20px;
 	}
 	.modal__content {
 		min-width: 300px;
@@ -518,19 +539,36 @@ footer img{
 		font-size: 9px;
 		padding-top: 10px;
 	}
+
+	.slider-inner img {
+		max-height: 200px;
+	}
+
+
 }
 
 
 
 @media screen and (max-width: 499px){
 	.mv img {
+		padding-top: 23%;
 		width: 95%;
 		height: auto;
+	}
+	.work_name {
+		font-size: 10px;
+		padding-top: 10px;
+	}
+	.slick-dots {
+		margin: 0;
 	}
 	.artist_box {
 		width: 260px;
 		height: 184px;
     }
+	.artist-name {
+		font-size: 24px;
+		}
 	.modal__content {
         left: calc(50% - 93% / 2);
 	}
