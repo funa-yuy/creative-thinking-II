@@ -428,12 +428,14 @@ header nav ul li {
 
 /* movie */
 .movie__link {
-	display: block;
 	margin: auto;
+	display: block;
+	max-width: 560px;
 	width: 100%;
-	height: auto;
+    aspect-ratio: 16 / 9;
 
 }
+
 /* information */
 .information__title {
 	text-align: center;
@@ -544,7 +546,6 @@ footer img{
 	.slider-inner img {
 		max-height: 200px;
 	}
-
 
 }
 
