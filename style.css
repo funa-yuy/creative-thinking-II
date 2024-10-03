@@ -265,6 +265,7 @@ header nav ul li {
 .modal__artist-name {
 	font-size: 24px ;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 .modal__heading {
 	font-size: 14px;
@@ -277,10 +278,6 @@ header nav ul li {
 	letter-spacing: 2.6px;
 }
 
-.modal__artist-name {
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
 .modal__artist-career {
 	margin-bottom: 30px;
 }
@@ -355,7 +352,7 @@ header nav ul li {
 /*=========　　　モーダルスライダーのためのcss　　　==========*/
 
 .modal_swiper-slide img {
-	max-height: 200px;
+	max-height: 300px;
 }
 
 
@@ -496,9 +493,6 @@ footer img{
 	}
 	.swiper-slide img {
 		max-height: 260px;
-	}
-	.modal_swiper-slide img {
-		max-height: 160px;
 	}
 }
 
