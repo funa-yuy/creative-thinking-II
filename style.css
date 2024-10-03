@@ -1,7 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
 html{
 	font-size: 17px;
-	font-family: "Noto Sans JP", 'Noto sans','Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif;
+	font-family: "Noto Sans JP", sans-serif;
+	/* font-family: "Noto Sans JP", 'Noto sans','Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif; */
 	color: #111;
 }
 
@@ -379,13 +382,6 @@ header nav ul li {
 	border: 2px solid #000;
 }
 
-
-@media screen and (max-width: 799px){
-	.more-link
-	{
-		margin: 40px auto;
-	}
-}
 .more-link button {
 	font-size: 16px;
 }
@@ -403,7 +399,7 @@ header nav ul li {
 /* information */
 .information__title {
 	text-align: center;
-	letter-spacing: 0.5px;/*字間指定*/
+	letter-spacing: 1.5px;/*字間指定*/
 }
 
 
@@ -495,22 +491,16 @@ footer img{
 		padding: 0 25px;
         left: calc(50% - 88% / 2);
 	}
-	.slick-prev, .slick-next {
-		height: 17px;
-		width: 17px;
-	}
-	.modal_main .slider-inner img {
-		max-height: 200px;
-	}
 	.modal_main .work_name {
 		font-size: 9px;
 		padding-top: 10px;
 	}
-
-	.slider-inner img {
-		max-height: 200px;
+	.swiper-slide img {
+		max-height: 260px;
 	}
-
+	.modal_swiper-slide img {
+		max-height: 160px;
+	}
 }
 
 
@@ -538,9 +528,11 @@ footer img{
 	.modal__content {
         left: calc(50% - 93% / 2);
 	}
-	.modal_main .slider-inner img {
+	.swiper-slide img {
+		max-height: 200px;
+	}
+	.modal_swiper-slide img {
 		max-height: 160px;
 	}
-
 }
 
