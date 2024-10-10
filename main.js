@@ -62,7 +62,7 @@ const swiper = new Swiper('.swiper',{
 	centeredSlides: true,
 
 	autoplay: {                         //自動再生
-		delay: 5000,
+		delay: 3000,
 		disableOnInteraction:false,	 // ユーザーが操作しても自動再生を止めない
 	},
 
