@@ -59,8 +59,9 @@ window.onclick = function (event) {
 //スライダー---------------------------------------------------------------------------------------------------------------------------
 const swiper = new Swiper('.swiper',{
 	loop: true,                         //ループ
-	centeredSlides: true,
-
+	speed: 500,
+	loopAdditionalSlides: 1,
+	centeredSlides: true, //アクティブなスライドが中央に来るようにする。
 	autoplay: {                         //自動再生
 		delay: 3000,
 		disableOnInteraction:false,	 // ユーザーが操作しても自動再生を止めない
