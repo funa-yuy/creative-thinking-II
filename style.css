@@ -382,6 +382,12 @@ header nav ul li {
 	font-size: 16px;
 }
 
+/* galleryページの撮影者テキスト */
+.center-text {
+	text-align: center;
+	margin-top: 50px;
+}
+
 /* movie */
 .movie__link {
 	margin: auto;
@@ -459,8 +465,8 @@ footer img{
 
 .photos_inner img
 {
-	height: 200px;
-	width: 200px;
+	height: 160px;
+	width: 160px;
 	object-fit: cover;
 	padding: 10px;
 }
