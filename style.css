@@ -37,7 +37,7 @@ img {
 	vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
 	width: 100%;
 	height: auto;
-  }
+}
 
 button {
 	border: none;
